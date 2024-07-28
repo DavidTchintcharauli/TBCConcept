@@ -1427,6 +1427,10 @@ section {
     display: flex;
 }
 
+.header_dropdown-link.router-link-active, .header_dropdown-link.w--current, .header_dropdown-link:hover {
+    color: #182cc0;
+}
+
 .footer_contact-item {
     grid-column-gap: 10px;
     font-weight: 500;
