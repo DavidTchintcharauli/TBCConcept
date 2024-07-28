@@ -229,11 +229,12 @@ document.getElementById('d_block').onclick = function() {
 // Mobile menu dropdown
 
 document.addEventListener('DOMContentLoaded', function() {
-    var dropdownToggles = document.querySelectorAll('.header_mobile-dropdown-toggle');
+    const dropdownToggles = document.querySelectorAll('.header_mobile-dropdown-toggle');
     dropdownToggles.forEach(function(toggle) {
         toggle.addEventListener('click', function() {
-            var dropdownList = this.closest('.header_mobile-dropdown').querySelector('.header_mobile-dropdown-list');
-            var currentArrow = this.querySelector('.header_mobile-dropdown-arr');
+            const dropdownList = this.closest('.header_mobile-dropdown').querySelector('.header_mobile_dropdown-list-div');
+            const dropdownListNav = this.closest('.header_mobile-dropdown').querySelector('.header_mobile-dropdown-list');
+            const currentArrow = this.querySelector('.header_mobile-dropdown-arr');
 
             document.querySelectorAll('.header_mobile-dropdown-arr').forEach(function(arrow) {
                 if (arrow !== currentArrow) {
@@ -243,6 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             currentArrow.classList.toggle('active');
             dropdownList.classList.toggle('active');
+            dropdownListNav.classList.toggle('d-block')
             this.classList.toggle('active');
         });
     });

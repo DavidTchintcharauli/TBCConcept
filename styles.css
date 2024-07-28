@@ -199,6 +199,20 @@ a:hover {
     transition: .4s;
 }
 
+
+.header_mobile_dropdown-list-div {
+    height: 0px;
+    overflow: hidden;
+    transition: height 900ms;
+}
+
+.header_mobile-dropdown-list.d-block {
+    display: block;
+    background: none;
+    position: relative;
+    transition: 900ms;
+}
+
 .d-block {
     display: block;
     min-height: 167px;
@@ -378,14 +392,24 @@ a:hover {
     display: flex;
 }
 
+.w-dropdown-list {
+    position: absolute;
+    background: #ddd;
+    display: none;
+    min-width: 100%;
+}
+
 .header_mobile-dropdown-list {
-    height: 0;
+    display: block;
+}
+
+.header_mobile-dropdown-list {
     grid-row-gap: 16px;
     transition: height 900ms ease;
     background-color: transparent;
     flex-direction: column;
     align-items: flex-start;
-    display: none;
+    display: block;
     position: static;
     overflow: hidden;
 }
@@ -399,6 +423,19 @@ a:hover {
     margin-right: auto;
     padding-top: 20px;
     display: flex;
+}
+
+.header_mobile-dropdown-list-div {
+    height: 0px;
+    overflow: hidden;
+    transition: height 900ms ease;
+}
+
+.header_mobile_dropdown-list-div.active {
+    height: 135px;
+    overflow: hidden;
+    transition-property: height;
+    transition: height 900ms ease;
 }
 
 .header_dropdown-line {
@@ -442,13 +479,6 @@ a:hover {
 
 .search-hover-color:hover{
     color: #007aff;
-}
-
-.w-dropdown-list {
-    position: absolute;
-    background: #ddd;
-    display: none;
-    min-width: 100%;
 }
 
 
