@@ -1434,6 +1434,10 @@ section {
     display: flex;
 }
 
+.footer_contact-item:hover {
+    text-decoration: underline;
+}
+
 .footer_social-list {
     grid-column-gap: 4px;
     grid-row-gap: 4px;
