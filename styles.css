@@ -927,13 +927,6 @@ section {
     padding-bottom: 60px;
 }
 
-.heading-wrapper {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36;
-    display: flex;
-}
-
 .grid-2-col {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
